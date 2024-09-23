@@ -41,6 +41,7 @@ import img16 from './img16.jpg'
 import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
+import black_play_icon from './black_play_icon.png'
 
 export const assets = {
     bell_icon,
@@ -66,7 +67,8 @@ export const assets = {
     arrow_left,
     arrow_right,
     spotify_logo,
-    clock_icon
+    clock_icon,
+    black_play_icon,
 }
 
 export const albumsData = [
@@ -100,7 +102,7 @@ export const albumsData = [
     },
     {   
         id:4,
-        name: "Mega Hits,",
+        name: "Mega Hits",
         image: img11,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#234e52"
