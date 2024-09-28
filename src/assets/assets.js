@@ -42,6 +42,7 @@ import song1 from  './song1.mp3'
 import song2 from  './song2.mp3'
 import song3 from  './song3.mp3'
 import black_play_icon from './black_play_icon.png'
+import favorite_icon from './favorite_icon.png'
 
 export const assets = {
     bell_icon,
@@ -69,6 +70,7 @@ export const assets = {
     spotify_logo,
     clock_icon,
     black_play_icon,
+    favorite_icon
 }
 
 export const albumsData = [

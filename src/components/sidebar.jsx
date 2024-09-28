@@ -1,20 +1,45 @@
 import React from 'react'
 import {assets} from '../assets/assets'
 import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 const Sidebar = () => {
     const navigate = useNavigate()
+
+    const [showSearchInput, setShowSearchInput] = useState(false);
+    const handleSearchClick = () => {
+      setShowSearchInput(!showSearchInput); 
+    };
+
+
   return (
     <div className='w-[25%] h-full p-2 flex-col gap-2 text-white hidden lg:flex'>
-        <div className='bg-[#121212] h-[15%] rounded flex flex-col justify-around'>
-            <div onClick={()=>navigate("/")} className='flex items-center gap-3 pl-8 cursor-pointer'>
+        <div className='bg-[#121212] h-[20%] rounded flex flex-col justify-around'>
+            <div onClick={()=>navigate('/')} className='flex items-center gap-3 pl-8 cursor-pointer mt-2'>
                 <img className='w-6' src={assets.home_icon} alt="" />
                 <p className='font-bold'>Home</p>
             </div>
-            <div className='flex items-center gap-3 pl-8 cursor-pointer'>
+            {/* <div className='flex items-center gap-3 pl-8 cursor-pointer'>
+                <img className='w-6' src={assets.search_icon} alt="" />
+                <p className='font-bold'>Search</p>
+            </div> */}
+
+{showSearchInput ? (
+        // Render search input field
+        <input
+          type='text'
+          placeholder='Search...'
+          className='p-2  bg-gray-800 text-white rounded mt-3 ml-2 mr-2 h-9'
+          autoFocus // Automatically focus the input when it appears
+          onBlur={() => setShowSearchInput(false)} // Hide input field when it loses focus
+        />
+      ) : (
+        // Render search button
+        <div className='flex items-center gap-3 pl-8 cursor-pointer' onClick={handleSearchClick}>
                 <img className='w-6' src={assets.search_icon} alt="" />
                 <p className='font-bold'>Search</p>
             </div>
+      )}
 
         </div>
         <div className='bg-[#121212] h-[85%] rounded'>
@@ -44,3 +69,4 @@ const Sidebar = () => {
 }
 
 export default Sidebar
+

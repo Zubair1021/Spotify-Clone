@@ -4,6 +4,7 @@ import Player from './components/Player'
 import Display from './components/Display'
 import { PlayerContext } from './context/Playercontext'
 
+
 const App = () => {
   const {audioRef,track} = useContext(PlayerContext)
   return (
@@ -19,3 +20,5 @@ const App = () => {
 }
 
 export default App
+
+

@@ -16,7 +16,7 @@ const Premium = () => {
     <div className="border border-gray-300 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
       <h2 className="text-2xl font-bold mb-4">Individual Pack</h2>
       <p className="text-sm text-gray-600 mb-4">Best for individuals</p>
-      <p className="text-4xl font-bold text-[#3AE176] mb-6">$9.99/month</p>
+      <p className="text-3xl font-bold text-[#3AE176] mb-6">$9.99/month</p>
       <ul className="text-sm mb-6 space-y-2">
         <li>✓ Unlimited skips</li>
         <li>✓ Offline listening</li>
@@ -32,7 +32,7 @@ const Premium = () => {
     <div className="border border-gray-300 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
       <h2 className="text-2xl font-bold mb-4">Duo Pack</h2>
       <p className="text-sm text-gray-600 mb-4">Best for two people</p>
-      <p className="text-4xl font-bold text-[#3AE176] mb-6">$12.99/month</p>
+      <p className="text-3xl font-bold text-[#3AE176] mb-6">$12.99/month</p>
       <ul className="text-sm mb-6 space-y-2">
         <li>✓ 2 Premium accounts</li>
         <li>✓ Duo Mix: shared playlists</li>
@@ -48,7 +48,7 @@ const Premium = () => {
     <div className="border border-gray-300 rounded-lg p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col items-center text-center">
       <h2 className="text-2xl font-bold mb-4">Family Pack</h2>
       <p className="text-sm text-gray-600 mb-4">Best for families</p>
-      <p className="text-4xl font-bold text-[#3AE176] mb-6">$15.99/month</p>
+      <p className="text-3xl font-bold text-[#3AE176] mb-6">$15.99/month</p>
       <ul className="text-sm mb-6 space-y-2">
         <li>✓ 6 Premium accounts</li>
         <li>✓ Family Mix: shared playlists</li>
